@@ -1,0 +1,12 @@
+Line with ERROR : 400
+Line with also and ERROR : 400
+Lines with many ERRORS : 401 , 503
+Esta linea es spanish con muchos ERRORES : 400 , 401 , 501 , 503
+This line is OK : 200
+This line is OK : 200
+This line has an ERROR : 400
+this line has an error : 401
+thid line has an error too : 400
+This line as a Warning : 600
+THIS LINE HAS A WARNING : 600
+THIS LINE HAS ANOTHER WARNING : 600
