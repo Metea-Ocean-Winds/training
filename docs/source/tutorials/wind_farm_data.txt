@@ -1,0 +1,4 @@
+Turbine_1, Wind Speed: 10.5 m/s, Power Output: 2226402.28 W
+Turbine_2, Wind Speed: 12.3 m/s, Power Output: 3578912.46 W
+Turbine_3, Wind Speed: 8.7 m/s, Power Output: 1266465.89 W
+Turbine_4, Wind Speed: 14.2 m/s, Power Output: 5506818.65 W

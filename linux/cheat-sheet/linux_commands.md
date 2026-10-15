@@ -156,6 +156,59 @@ command > output.log 2>&1
 
 ---
 
+## More Text Tools
+
+```bash
+tr 'a-z' 'A-Z' < file.txt      # Translate characters
+tr -d '"' < file.txt           # Delete characters
+tr -s ' ' < file.txt           # Squeeze repeated spaces
+cmd | tee out.txt              # Show AND save output
+cmd | tee -a out.txt           # Show AND append
+diff -u old.txt new.txt        # Compare files
+less file.txt                  # Page through (/ search, q quit)
+```
+
+---
+
+## Shell Essentials
+
+```bash
+name="value"                   # Variable (no spaces around =)
+echo "$name"                   # Use it (always quote)
+export EDITOR=nano             # Environment variable
+echo $PATH | tr ':' '\n'       # Where programs are searched
+echo "Today: $(date +%F)"      # Command substitution
+mkdir -p dir/{a,b,c}           # Brace expansion
+touch day{1..5}.txt            # Range expansion
+```
+
+---
+
+## Exit Codes & Chaining
+
+```bash
+echo $?                        # Exit code of last command (0 = success)
+cmd1 && cmd2                   # Run cmd2 only if cmd1 succeeded
+cmd1 || cmd2                   # Run cmd2 only if cmd1 failed
+cmd1 ; cmd2                    # Always run both
+grep -q text file              # Silent, only sets exit code
+```
+
+---
+
+## Archives
+
+```bash
+tar -czf out.tar.gz files/     # Create gzip archive
+tar -tzf out.tar.gz            # List contents
+tar -xzf out.tar.gz            # Extract
+tar -xzf out.tar.gz -C /tmp    # Extract into folder
+gzip file / gunzip file.gz     # Compress / decompress single file
+zcat file.gz | grep text       # Read without extracting
+```
+
+---
+
 ## Sort / Uniq / Count
 
 ```bash
@@ -176,6 +229,10 @@ ps
 top
 kill PID
 Ctrl + C   # Stop running process
+jobs       # List background jobs
+bg %1      # Resume job 1 in background
+fg %1      # Bring job 1 to foreground
+kill %1    # Kill job 1
 ```
 
 ---
@@ -204,8 +261,13 @@ curl example.com
 ## Help
 
 ```bash
-man command
-history
+man command          # Full manual (/ to search, q to quit)
+command --help       # Short help
+apropos keyword      # Search manuals by keyword
+type command         # Builtin, alias or program?
+which command        # Path of the program
+history              # Command history
+!42                  # Re-run history entry 42
 ```
 
 ---

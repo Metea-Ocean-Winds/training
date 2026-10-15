@@ -389,14 +389,10 @@ latest_report -> report.txt
 
 # In the intermediate course ...
 
-- Scripting
+- Session 3: Flashback & shell power-ups
 
-- Scheduling process `crontab`
+- Session 4: Scripting and scheduling with `crontab`
 
 # In the administrator course ...
 
-- Create users
-
-- SSH connection
-
-- Orchestra process
+- Session 5: Users, groups, sudoers, partitions and mounting
